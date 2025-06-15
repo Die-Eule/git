@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="prim1">Пример1</label>
+            <select id="prim1">
+                <option value="1">1 выбор</option>
+                <option value="2">2 выбор</option>
+                <option value="3">3 выбор</option>
+            </select>
+        </div>
+        <div>
+            <label for="prim2">Пример2</label>
+            <input type="text" id="prim2">
+        </div>
+
+        <button onclick="result()">Создать</button>
+    </form>
+
+    <!-- <div id="result">
+        <p id="res-txt"></p>
+    </div> -->
+</body>
+<script>
+    // document.getElementById('result').style='display: none';
+    function result() {
+        var inp1 = document.getElementById('prim1').value;
+        var inp2 = document.getElementById('prim2').value;
+        alert('Ваш выбор: ' + inp1 + ' и ' + inp2);
+        // document.getElementById('res-txt').innerText = 'Ваш выбор: ' + inp1 + ' и ' + inp2;
+        // document.getElementById('result').style='display: block';
+    }
+</script>
+</html>
+
+
